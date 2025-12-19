@@ -206,6 +206,86 @@ li {
   margin-bottom: 10px;
 }
 
+.register-card {
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.register-card h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-card input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  margin: 8px 0 16px 0;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.register-card input:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.1);
+  background: white;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.register-card button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #61dafb;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.register-card button:hover {
+  background: #21a3c4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.4);
+}
+
+.register-card button[type="button"] {
+  background: #6c757d;
+}
+
+.register-card button[type="button"]:hover {
+  background: #5a6268;
+  box-shadow: 0 4px 15px rgba(108, 117, 125, 0.4);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -223,25 +223,29 @@ function App() {
             </div>
           ) : showRegister ? (
             <div className="page">
-              <h2>注册</h2>
-              <form onSubmit={handleRegister}>
-                <input
-                  type="text"
-                  placeholder="用户名"
-                  value={registerUsername}
-                  onChange={(e) => setRegisterUsername(e.target.value)}
-                  required
-                />
-                <input
-                  type="password"
-                  placeholder="密码"
-                  value={registerPassword}
-                  onChange={(e) => setRegisterPassword(e.target.value)}
-                  required
-                />
-                <button type="submit">注册</button>
-                <button type="button" onClick={() => setShowRegister(false)}>取消</button>
-              </form>
+              <div className="register-card">
+                <h2>注册新用户</h2>
+                <form onSubmit={handleRegister}>
+                  <input
+                    type="text"
+                    placeholder="用户名"
+                    value={registerUsername}
+                    onChange={(e) => setRegisterUsername(e.target.value)}
+                    required
+                  />
+                  <input
+                    type="password"
+                    placeholder="密码"
+                    value={registerPassword}
+                    onChange={(e) => setRegisterPassword(e.target.value)}
+                    required
+                  />
+                  <div className="form-buttons">
+                    <button type="submit">注册</button>
+                    <button type="button" onClick={() => setShowRegister(false)}>取消</button>
+                  </div>
+                </form>
+              </div>
             </div>
           ) : showHistory ? (
             <div className="page">
